@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mario Party Player Widget</title>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+  <link href="main.css" rel="stylesheet" />
+  <script src="config.js"></script>
+</head>
+<body>
+  <div id="playerList" class="container"></div>
+  <script>
+	// Get the playerlist
+	const playerList = document.getElementById("playerList");
+	config.players.forEach((item) => {
+		var playerItem = document.createElement("span");
+		playerItem.setAttribute("class", `sprite ${item.char.toLowerCase()}`);
+		playerItem.innerHTML = `<p>${item.name}</p>`;
+		playerList.appendChild(playerItem);
+	});
+	// Append the stylesheet
+	var gameSheet = document.createElement("link");
+	gameSheet.setAttribute("rel", "stylesheet");
+	gameSheet.setAttribute("href", `${config.game}/style.css`);
+	document.head.appendChild(gameSheet);
+	// Apply any other css tweaks
+	var stylesheetChanges = "";
+	if (config.fontSize !== undefined) {
+		stylesheetChanges += `body { font-size: ${config.fontSize}px; }`;
+	}
+	var styleConfig = document.createElement("style");
+	styleConfig.innerText = stylesheetChanges;
+	document.head.appendChild(styleConfig);
+  </script>
+</body>
+</html>
