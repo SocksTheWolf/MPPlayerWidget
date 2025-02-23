@@ -14,11 +14,14 @@ EX:
 * To change the font size, modify the value of `fontSize` by changing the number.
 * To change the game, modify the value of `game` to one of the appropriate options ("mp2", "mp3", "jamboree")
 * Adding more players you can just copy the values of the sample in the file, if a character doesn't exist for a game, no character will appear next to the name.
+* You can also modify players names by changing the data inline for an entry as well.
+
+**NOTE**: If you have the browser already loaded and visible on the OBS screen, you will need to refresh the browser in OBS (click on the browser element and then press the `Reload` button that appears)
 
 ## OBS Setup
 
 1. Add a browser source in OBS.
-2. Set the width and height of the browser to 1920 x 1080 (or the output resolution of your stream)
+2. Set the width and height of the browser to 800 x 500 (you can change this later)
 3. Click on the local file option
 4. Browse to the `index.html` in this folder.
 5. Click the `Shutdown Source When Not Visible` option in OBS.
