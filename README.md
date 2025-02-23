@@ -21,7 +21,7 @@ EX:
 2. Set the width and height of the browser to 1920 x 1080 (or the output resolution of your stream)
 3. Click on the local file option
 4. Browse to the `index.html` in this folder.
-5. Click the `Unload Browser When Not Visible` option in OBS.
+5. Click the `Shutdown Source When Not Visible` option in OBS.
 6. Save the new browser source
 7. Now you can resize and move around the browser widget as appropriate to wherever you want.
 
