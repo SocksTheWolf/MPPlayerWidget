@@ -36,3 +36,7 @@ EX:
 4. Rename each sprite to the appropriate character name. They should be all lower case, and any spaces should switched to underscore (`_`) characters
 4. Run `CreateStyleSheet.bat`
 5. A `style.css` file should be created in every folder.
+
+### License
+
+Icons and images in this project may be owned by Nintendo, the license only covers the code that is in this repository.
