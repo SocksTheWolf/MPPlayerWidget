@@ -1,4 +1,4 @@
-# Mario Party Stream Widget
+# Mario Party Player Widget
 
 This is a real simple HTML widget that you can add to your stream that shows
 who is playing as what character. Supports unlimited amount of players.
@@ -6,7 +6,7 @@ who is playing as what character. Supports unlimited amount of players.
 ## Widget Setup
 
 1. Open `config.js` in Notepad or a similar text editor.
-2. Make the various changes that you need to. Every setting is documented.
+2. Make the various changes that you need to. Every setting is currently documented.
 3. Save your file.
 
 EX:
@@ -20,8 +20,8 @@ EX:
 1. Add a browser source in OBS.
 2. Set the width and height of the browser to 1920 x 1080 (or the output resolution of your stream)
 3. Click on the local file option
-4. Browse to the `index.html`
-5. Click the "Unload Browser When Not Visible" option in OBS.
+4. Browse to the `index.html` in this folder.
+5. Click the `Unload Browser When Not Visible` option in OBS.
 6. Save the new browser source
 7. Now you can resize and move around the browser widget as appropriate to wherever you want.
 
