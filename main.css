@@ -5,14 +5,14 @@ body {
 }
 p {
   padding-top: 15px;
-  padding-left: 37px;
+  padding-left: 1em;
   position: relative;
   top: -5px;
 }
 .sprite {
   display: block;
-  padding-left: 5px;
-  margin-left: 7px;
+  padding-left: 2rem;
+  margin-left: 1rem;
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -25,4 +25,21 @@ p {
   background-color: rgba(0,0,0,0.5);
   padding-top: 1px;
   padding-right: 4px;
+}
+
+/* Powers the vertical bar overlay */
+@media screen and (max-height: 15rem) {
+  .container {
+    display: block ruby !important;
+    min-width: 45em;
+  }
+  p {
+    padding-left: 3em;
+  }
+  .container span:not(:last-child) > p:after {
+    content: " | ";
+  }
+  body {
+    overflow-x: hidden;
+  }
 }

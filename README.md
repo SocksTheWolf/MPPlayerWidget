@@ -21,12 +21,28 @@ EX:
 ## OBS Setup
 
 1. Add a browser source in OBS.
-2. Set the width and height of the browser to 800 x 500 (you can change this later)
+2. Set the width and height of the browser to 800 x 600 (you can change this later)
 3. Click on the local file option
 4. Browse to the `index.html` in this folder.
 5. Click the `Shutdown Source When Not Visible` option in OBS.
 6. Save the new browser source
 7. Now you can resize and move around the browser widget as appropriate to wherever you want.
+
+## Screenshots
+
+### Vertical Widget
+
+This is the default widget, and is seen in any instance where the vertical height is greater than 200px.
+
+![Vertical Style Widget on an OBS preview](.github/vertical.jpg)
+
+### Horizontal Widget
+
+To achieve, set your browser width/height to 1200 x 200.
+
+![Horizontal Style Widget on an OBS preview](.github/horizontal.jpg)
+
+---
 
 ## Adding support for more games
 
@@ -34,8 +50,10 @@ EX:
 2. Create a folder with the game name, it should have no spaces.
 3. Paste the individual cut up images of each sprite into this newly created folder.
 4. Rename each sprite to the appropriate character name. They should be all lower case, and any spaces should switched to underscore (`_`) characters
-4. Run `CreateStyleSheet.bat`
-5. A `style.css` file should be created in every folder.
+5. Run `CreateStyleSheet.bat`
+6. A `style.css` file should be created in every folder.
+
+---
 
 ### License
 

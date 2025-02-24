@@ -7,6 +7,13 @@ exit
 
 :$generatecss
 echo Entering %1
+
+rem Skip the image hosting part of the project
+if %1 EQU ".github" (
+  echo stopping
+  exit /B
+)
+
 cd %1
 echo Removing existing stylesheet
 rm -f style.css
