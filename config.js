@@ -11,6 +11,6 @@ const config = {
 	// INSERT OR MODIFY PLAYERS AFTER THIS LINE
 	{name: "Player 1", char: "yoshi"},
 	{name: "Player 2", char: "luigi"},
-    {name: "Player 3", char: "toadette"},
+	{name: "Player 3", char: "toadette"},
 	{name: "Player 4", char: "peach"},
 ]};
